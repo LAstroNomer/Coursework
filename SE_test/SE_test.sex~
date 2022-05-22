@@ -17,7 +17,7 @@ FLAG_TYPE          OR
 #------------------------------- Extraction ----------------------------------
  
 DETECT_TYPE      CCD             # CCD (linear) or PHOTO (with gamma correction)
-DETECT_MINAREA   3              # min. # of pixels above threshold
+DETECT_MINAREA   5             # min. # of pixels above threshold
 DETECT_THRESH    3             # <sigmas> or <threshold>,<ZP> in mag.arcsec-2
 ANALYSIS_THRESH  3              # <sigmas> or <threshold>,<ZP> in mag.arcsec-2
  

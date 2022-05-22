@@ -8,7 +8,7 @@ BASIS_TYPE      PIXEL_AUTO      # NONE, PIXEL, GAUSS-LAGUERRE or FILE
 BASIS_NUMBER    20              # Basis number or parameter
 PSF_SAMPLING    0.0             # Sampling step in pixel units (0.0 = auto)
 PSF_ACCURACY    0.01            # Accuracy to expect from PSF "pixel" values
-PSF_SIZE        25,25           # Image size of the PSF model
+PSF_SIZE        101,101           # Image size of the PSF model
  
 #------------------------- Point source measurements -------------------------
  
@@ -33,7 +33,7 @@ SAMPLE_MAXELLIP    0.3          # Maximum (A-B)/(A+B) for a source to be used
  
 #------------------------------- Check-plots ----------------------------------
  
-#CHECKPLOT_DEV       NONE         # NULL, XWIN, TK, PS, PSC, XFIG, PNG,
+CHECKPLOT_DEV       PS        # NULL, XWIN, TK, PS, PSC, XFIG, PNG,
                                 # JPEG, AQT, PDF or SVG
 #CHECKPLOT_TYPE      NONE#FWHM,ELLIPTICITY,COUNTS, COUNT_FRACTION, CHI2, RESIDUALS
                                 # or NONE

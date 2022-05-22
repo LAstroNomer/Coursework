@@ -20,7 +20,7 @@ if __name__ == '__main__':
     psf=PSF,
     wcs=NullWCS(), photocal=NullPhotoCal(),
     sky=ConstantSky(0.))
-    src = PointSource(PixPos(W//2, H//2), Flux(1))
+    src = PointSource(PixPos(W//2 + 1, H//2 + 1), Flux(1))
     tr = Tractor([tim], [src])
     mod = tr.getModelImage(0)
 
