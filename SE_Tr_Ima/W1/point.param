@@ -1,0 +1,15 @@
+NUMBER
+
+
+XMODEL_IMAGE                 Barycenter position along world x axis                    [deg]
+YMODEL_IMAGE
+
+SPREAD_MODEL
+SPREADERR_MODEL
+
+FLAGS_MODEL
+NITER_MODEL
+CHI2_MODEL
+FLAGS
+FLAGS_WEIGHT
+

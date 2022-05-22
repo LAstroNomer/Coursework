@@ -1,0 +1,36 @@
+NUMBER
+
+#X_IMAGE                 Barycenter position along world x axis                    [deg]
+#Y_IMAGE
+
+
+XMODEL_IMAGE                 Barycenter position along world x axis                    [deg]
+YMODEL_IMAGE
+
+ALPHAMODEL_J2000           Right ascension of the fitted PSF (J2000)                 [deg]
+DELTAMODEL_J2000 
+
+#FLUX_POINTSOURCE
+
+
+FLUX_AUTO
+MAG_SPHEROID
+FLUX_SPHEROID
+
+SPHEROID_SERSICN
+SPHEROID_SERSICNERR
+#SPHEROID_THETA_IMAGE
+
+ELLIP1MODEL_IMAGE        Ellipticity component from model-fitting                 
+ELLIP2MODEL_IMAGE        Ellipticity component from model-fitting
+
+SPREAD_MODEL
+SPREADERR_MODEL
+SPHEROID_REFF_IMAGE
+
+#FLAGS_MODEL
+#NITER_MODEL
+#CHI2_MODEL
+#FLAGS
+#FLAGS_WEIGHT
+
