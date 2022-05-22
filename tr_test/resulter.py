@@ -85,7 +85,7 @@ if __name__ == '__main__':
     tbl_g['f_err'] = tbl_init_g[' Flux '] - tbl_g[' Flux ']
     tbl_g['re_err'] = tbl_init_g[' re '] - tbl_g[' re ']    
     tbl_g['n_err'] = tbl_init_g[' n '] - tbl_g[' n ']
-    tbl_g['g1_err'] = tbl_init_g[' g1 '] - tbl_g[' e1 ']
+    tbl_g['g1_err'] = tbl_init_g[' g1 '] + tbl_g[' e1 ']
     tbl_g['g2_err'] = tbl_init_g[' g2 '] - tbl_g[' e2 ']
     tbl_init_g[' Flux '] = 20-2.5*np.log10(tbl_init_g[' Flux '])
 

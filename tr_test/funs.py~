@@ -228,7 +228,7 @@ def main(image, hdr, pathout=None):
     # Create Tractor Image
     tim = Image(data=image, invvar=np.ones_like(image) / (noice_sigm**2),
     psf=NCircularGaussianPSF([psf],[1.]),
-    wcs=NullWCS(), photocal=NullPhotoCal(),
+    wcs=NullWCS(pixscale=pixscale), photocal=NullPhotoCal(),
     sky=ConstantSky(sky))
     
     # Create Tractor source with approximate position and flux

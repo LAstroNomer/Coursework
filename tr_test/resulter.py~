@@ -29,7 +29,7 @@ if __name__ == '__main__':
     tbl_init_g.sort(' x_0 ')
     tbl_init_p.sort(' Flux ')
     
-    gal = open('galaxies.cat', 'r')    
+    gal = open('tr_galaxies.cat', 'r')    
     key = 0
     for lines in gal:
         if key == 0:
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     tbl_g.sort(' x_0 ')
 
 
-    point = open('point.cat', 'r')
+    point = open('tr_point.cat', 'r')
 
     key = 0
     for lines in point:
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     tbl_g['f_err'] = tbl_init_g[' Flux '] - tbl_g[' Flux ']
     tbl_g['re_err'] = tbl_init_g[' re '] - tbl_g[' re ']    
     tbl_g['n_err'] = tbl_init_g[' n '] - tbl_g[' n ']
-    tbl_g['g1_err'] = tbl_init_g[' g1 '] - tbl_g[' e1 ']
+    tbl_g['g1_err'] = tbl_init_g[' g1 '] + tbl_g[' e1 ']
     tbl_g['g2_err'] = tbl_init_g[' g2 '] - tbl_g[' e2 ']
     tbl_init_g[' Flux '] = 20-2.5*np.log10(tbl_init_g[' Flux '])
 
@@ -143,7 +143,7 @@ if __name__ == '__main__':
 
     plt.savefig('g_res.png')
     
-    print(tbl_g)
+ 
 
 
     tbl_p['x_err'] = tbl_init_p[' x_0 ']  - tbl_p[' x_0 ']

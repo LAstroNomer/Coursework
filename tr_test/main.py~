@@ -30,6 +30,6 @@ if __name__ == '__main__':
             p += 1
         else:
             x0, y0, fx, re, e1, e2, n = cat[i].getParams()
-            print("%9d %5.3f %5.3f %6.3f %4.1f %3.1f %3.2f %3.2f" % (g, x0, y0, fx, re, n, e1, e2), file=g_file)
+            print("%9d %5.3f %5.3f %6.3f %4.1f %3.1f %3.2f %3.2f" % (g, x0, y0, fx, re*0.8452134572561297, n, e1, e2), file=g_file)
             g += 1
     
